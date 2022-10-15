@@ -6,12 +6,12 @@
 */
 int print_last_digit(int nld)
 {
-int pld;
-pld = (nld % 10);
-if (pld < 0)
+int l;
+l = (nld % 10);
+if (l < 0)
 {
-pld = (-1 * pld);
+l = (-1 * l);
 }
-_putchar(pld + '0');
-return (pld);
+_putchar(l + '0');
+return (l);
 }
