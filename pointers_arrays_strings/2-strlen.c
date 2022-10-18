@@ -2,16 +2,14 @@
 /**
   * _strlen - returns the length of a string
   *
-  * @t counter
+  * @s: counter
   * Return: Srtring length
   */
-void _strlen(char *t)
+int _strlen(char *s)
 {
 	int temp = 0;
 
-for (; *t != '\0'; t++)
-{
-temp++
-}
-return (temp);
+	while (s[temp])
+		temp++;
+	return (temp);
 }
