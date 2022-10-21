@@ -1,0 +1,28 @@
+#include "main.h"
+/**
+* _strncpy - Write a function that copies a string
+* Variables
+* @dest: string
+* @src: string
+* @n: int
+* Return: dest
+*/
+
+char *_strncpy(char *dest, char *src, int n)
+{
+int i = 0;
+
+/*rewrite dest with src content bite by bite until the end of src or reach n */
+while (src[i] != '\0' && i < n)
+{
+dest[i] = src[i];
+i++;
+}
+/*if src size is < dest put \0 at the rest of the dest bites */
+while (i < n)
+{
+dest[i] = '\0';
+i++;
+}
+return (dest);
+}
