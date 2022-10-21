@@ -1,5 +1,6 @@
-#include "main.h"
+lude "main.h"
 /**
+* The funtion is call _strncat
 * _strncat - concatenates two strings.
 * Variables
 * @dest: string
@@ -16,12 +17,12 @@ while (dest[i] != '\0')
 {
 i++;
 }
-/*add characters to the dest string until n bites of src*/
+//add characters to the dest string until n bites of src
 while (src[j] != '\0' && j < n)
 {
 dest[i + j] = src[j];
 j++;
 }
-/*the result is the original dest + n bites of src*/
+//the result is the original dest + n bites of src
 return (dest);
 }
