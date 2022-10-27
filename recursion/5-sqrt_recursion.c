@@ -1,13 +1,13 @@
 #include "main.h"
 /**
-* check_sqrt - checks if the square root is a natural
-* @n: number
-* @root: square root
-* Return: check_sqrt
-*/
+ * check_sqrt - checks if the square root is valid
+ * @n: number
+ * @root: square root
+ * Return: check_sqrt
+ */
 
 int check_sqrt(int n, int root)
-{
+{/*base case*/
 	if (root * root == n)
 	{
 		return (root);
@@ -16,7 +16,7 @@ int check_sqrt(int n, int root)
 	{
 		return (-1);
 	}
-
+	/*recurtion funtion*/
 	return (check_sqrt(n, root + 1));
 }
 
