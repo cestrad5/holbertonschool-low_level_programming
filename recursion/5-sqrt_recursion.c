@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* check - checks if the square root is a natural
+* check_sqrt - checks if the square root is a natural
 * @n: number
 * @root: square root
 * Return: check_sqrt
