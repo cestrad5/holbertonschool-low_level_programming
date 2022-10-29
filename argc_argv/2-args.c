@@ -1,11 +1,11 @@
 #include <stdio.h>
 /**
 * main - Write a program that prints all arguments it receives
-* @argc: argv
+* @argc: parameter
 * @argv: array
 * Return: 0
 */
-int main(int argc, char *argv)
+int main(int argc, char *argv[])
 {
 int i;
 
