@@ -1,10 +1,11 @@
 #include "main.h"
 /**
-* jack_bauer - function that prints every minute of the day, 24 hour clock
-* h = hour, m = minutes
+* jack_bauer - Write a function that prints every minute of the day of Jack Bauer
+*starting from 00:00 to 23:59.
+*@h = hour
+*@m = minutes
 * / 10 allows second digit to rotate
-* for loop breaks before passing 24:00
-* Return: 24 hour clock line by line
+* * Return: 24 hour clock line by line
 */
 void jack_bauer(void)
 {
