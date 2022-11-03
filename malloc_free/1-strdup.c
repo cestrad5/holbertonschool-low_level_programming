@@ -17,7 +17,7 @@ return (NULL);
 while (str[i] != '\0')
 i++;
 /*reserve memory and s store the addres*/
-s = malloc(sizeof(char) * i);
+ s = malloc((sizeof(char) * i) + 1);
 /*returns NULL if insufficient memory was available*/
 if (s == NULL)
 return (NULL);
