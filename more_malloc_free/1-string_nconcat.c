@@ -11,7 +11,7 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 int s = 0;
-unsigned int t = 0;
+unsigned int t;
 char *p;
 /*if NULL is passed, treat it as an empty string*/
 if (s1 == NULL)
@@ -28,13 +28,14 @@ if (p == NULL)
 free(p);
 return (NULL);
 }
+/*reset countes to 0*/
+s = t = 0;
 /*copy each position in s1 to p*/
 while (s1[s] != '\0')
 {
 p[s] = s1[s];
 s++;
 }
-/*copy untill \0 or until n*/
 while (s2[t] != '\0' && t < n)
 {
 p[s] = s2[t];
