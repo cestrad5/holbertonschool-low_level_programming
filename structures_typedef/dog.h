@@ -3,9 +3,9 @@
 
 /**
 * struct dog - dog database struct
-* @*name: pointer to the dog name
+* @name: pointer to the dog name
 * @age: age of the dog
-* @*owner: pointer to the dog's owner name
+* @owner: pointer to the dog's owner name
 */
 
 struct dog
