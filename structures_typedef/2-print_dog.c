@@ -2,10 +2,9 @@
 #include <stdlib.h>
 #include "dog.h"
 /**
-* print_dog - pritn the elements of the struct
-* @d: instance for data structure
-*
-* Return: void.
+* print_dog - print the elements of the struct dog
+* @d: element of data structure
+* Return: void
 */
 void print_dog(struct dog *d)
 {
