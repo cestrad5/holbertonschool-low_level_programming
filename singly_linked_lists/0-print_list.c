@@ -1,0 +1,33 @@
+#include "lists.h"
+
+/**
+* print_list - Prints all elements of a list
+* @h: Pointer to a list
+*
+* Return: Number of nodes
+*/
+
+
+size_t print_list(const list_t *h)
+{
+  /*define cont to record the number of elements in list_t*/
+int count = 0;
+/*check if the pointer to the head exit*/
+while (h != NULL)
+{
+/*If the head has not values prints...*/
+if (h->str == NULL)
+{
+printf("[0] (nil)\n");
+}
+else
+{
+/*Prints the content of len and str*/
+printf("[%i] %s\n", h->len, h->str);
+}
+/*Now h will point to the next element of list*/
+h = h->next;
+count++;
+}
+return (count);
+}
