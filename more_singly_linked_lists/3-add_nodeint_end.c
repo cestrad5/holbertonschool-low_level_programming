@@ -25,5 +25,5 @@ while (last_node->next != NULL)
 	last_node = last_node->next;
 last_node->next = new_node;
 return (new_node);
-free (new_node);
+free(new_node);
 }
